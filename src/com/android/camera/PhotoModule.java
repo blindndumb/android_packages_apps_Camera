@@ -963,7 +963,7 @@ public class PhotoModule
                     && mActivity.mShowCameraAppView
                     && !(mHDRShotInProgress && mBurstShotsDone < 3)) {
                 // Finish capture animation
-                // ((CameraScreenNail) mActivity.mCameraScreenNail).animateSlide();
+                ((CameraScreenNail) mActivity.mCameraScreenNail).animateSlide();
             }
             mFocusManager.updateFocusUI(); // Ensure focus indicator is hidden.
             if (!mIsImageCaptureIntent && !Util.enableZSL()) {
